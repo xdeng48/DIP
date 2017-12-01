@@ -45,6 +45,21 @@ Secondly, ImprovedCanny function wrapped in drawing.m will be called to detect e
 ### Faulted Image Reconstruction
 Thirdly, this program will continues its work after obtaining canny edge image. Use both edge image and fault line drawn by user, it will start reconstruction step and stops when it finds the best matching points.
 
+### Traditional Canny Edge Detection Test
+To compare edges detected by traditional edge detection algorithm and our improved edge detection algorithm, we could run main.m file to get results from traditional Canny edge detection.<br>
+
+(1)Usage:
+* [Ioutput]= cannydetector(I);
+
+(2)Input:
+* I: Gray image of original image
+
+(3)Output:
+* Ioutput: Edges detected by traditional Canny edge detection algorithm, plot by imtool function, title('Final image')
+
+(4)Function call:
+* Traditional Canny Edge Detection contains several components, including smoothing.m, computeangel.m, gradingedges.m, nonmaximalsuppression.m, connectingedge.m. When runing cannydetector, all above function will be called. 
+
 
 
   
